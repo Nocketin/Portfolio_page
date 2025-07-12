@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat";
 }
 
-.vertical-line {
+.line {
   width: 70px;
   height: 2px;
   background-color: #000000;
@@ -85,8 +85,18 @@ body {
   gap: 12px;
 }
 
-.title-line {
+.line--yellow {
   width: 60px;
   height: 3px;
   background-color: #ffa501;
 }
+
+
+.font12 {
+    font-size: 12px;
+}
+
+.line--thin{
+    height: 0.5px;
+}
+

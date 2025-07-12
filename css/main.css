@@ -32,12 +32,12 @@
 .resume {
     width: 40%;
     height: 378px;
-    background-color: antiquewhite;
     padding: 8px;
     
     display: flex;
     flex-direction: column;
     gap: 45px;
+    position: relative;
 }
 
 .resume__title {
@@ -47,9 +47,8 @@
 .resume__item {
     width: 100%;
     height: 129px;
-    background-color: aquamarine;
 
-    border-left: 1px solid black;
+    
     padding-left: 40px;
     display: flex;
     flex-direction: column;
@@ -57,7 +56,6 @@
 
 .resume__circle {
     position: relative;
-
 }
 
 .resume__img {
@@ -70,13 +68,38 @@
 .resume__info {
     display: flex;
 }
-.text {
-    font-size: 12px;
-}
+
 .resume__info-container {
     display: flex;
     flex-direction: column;
 
     margin-left: 50px;
     width: auto;
+}
+
+.resume__text {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.resume__decoration {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
+    transform: rotate(90deg);
+}
+
+.resume__line{
+    position: absolute;
+    z-index: -10;
+    width: 343px;
+}
+
+.resume__circle-line {
+    position: absolute;
+    width: 40px;
+    right: 0px;
+    top: 20px;
+    z-index: -10;
 }
