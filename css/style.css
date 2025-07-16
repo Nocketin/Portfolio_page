@@ -45,22 +45,25 @@ body {
 }
 
 .circle--small {
-    height: 15px;
-    width: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 .left-circle__text {
   position: relative;
-  z-index: 5;
   margin-left: 10px;
 }
 
 .button {
+  background-color: transparent;
+  border: none;
   height: 45px;
   width: 135px;
   text-align: center;
   padding: 12px 25px 12px 25px;
   font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .button--yellow {
@@ -91,12 +94,82 @@ body {
   background-color: #ffa501;
 }
 
-
 .font12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.line--thin{
-    height: 0.5px;
+.line--thin {
+  height: 0.5px;
 }
 
+.github-img {
+  background-image: url("/assets/svg/Github.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.inst-img {
+  background-image: url("/assets/svg/Instagram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook-img {
+  background-image: url("/assets/svg/Facebook.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.telegram-img {
+  background-image: url("/assets/svg/Telegram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook-img--rotate {
+  transform: rotate(90deg);
+}
+
+.burger {
+  height: 21px;
+  width: 36px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cross {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.cross span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #000;
+
+  &:first-child {
+    transform: rotate(45deg);
+  }
+
+  &:last-child {
+    transform: rotate(-45deg);
+  }
+}
+
+.form__error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (max-width: 321px) {
+  .title-text {
+    font-size: 24px;
+  }
+}

@@ -7,41 +7,88 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <header class="header">
+      <div class="header__overlay"></div>
+      <div class="header__navigation">
+        <div class="header__cross cross">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          ПРО МЕНЯ
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          МОЙ ОПЫТ
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          МОИ НАВЫКИ
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          МОИ РАБОТЫ
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          ПРАЙС-ЛИСТ
+        </div>
+        <div class="header__nav-item">
+          <div class="ring"></div>
+          КОНТАКТЫ
+        </div>
+
+        <div class="header__nav-contacts">
+          <a
+            href="https://github.com/"
+            class="header__contacts-item github-img"
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="header__contacts-item inst-img"
+          >
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            class="header__contacts-item facebook-img"
+          >
+          </a>
+        </div>
+      </div>
       <div class="header__contacts">
         Социальные сети
         <div class="line"></div>
-        <a href="https://github.com/"
-          ><img
-            class="header__contacts-item"
-            src="./assets/svg/Github.svg"
-            alt="Github"
-          />
+        <a
+          href="https://github.com/"
+          class="header__contacts-item github-img"
+        ></a>
+        <a
+          href="https://www.instagram.com/"
+          class="header__contacts-item inst-img"
+        >
         </a>
-        <a href="https://www.instagram.com/"
-          ><img
-            class="header__contacts-item"
-            src="./assets/svg/Instagram.svg"
-            alt="Instagram"
-          />
-        </a>
-        <a href="https://www.facebook.com/"
-          ><img
-            class="header__contacts-item"
-            src="./assets/svg/Facebook.svg"
-            alt="Facebook"
-          />
+        <a
+          href="https://www.facebook.com/"
+          class="header__contacts-item facebook-img"
+        >
         </a>
       </div>
+      <button class="header__burger burger">
+        <div class="burger__line line burger__line--short"></div>
+        <div class="burger__line line"></div>
+        <div class="burger__line line burger__line--short"></div>
+      </button>
       <div class="header__container">
         <div class="header__info">
           <div class="left-circle">
             <div class="circle"></div>
             <h4 class="left-circle__text">Меня зовут Александра Смит</h4>
           </div>
-          <h1>
+          <h1 class="header__title">
             Я web-разработчик <br />
             из города Москва
           </h1>
@@ -54,41 +101,42 @@
     </header>
 
     <main class="main">
+      <img src="./assets/img/Photo-phone.jpg"/ alt="Photo"
+      class="main__photo-phone">
       <div class="main__container">
         <div class="title-container">
           <div class="mid-circle">
             <div class="circle"></div>
             <div class="mid-circle__text">Опыт</div>
           </div>
-          <h1>Чем я буду полезна</h1>
+          <h1 class="title-text">Чем я буду полезна</h1>
           <div class="line line--yellow"></div>
         </div>
 
         <div class="main__content">
           <div class="resume">
             <div class="resume__decoration">
-                <div class="circle circle--small"></div>
-                <div class="resume__line line line--thin"></div>
+              <div class="circle circle--small"></div>
+              <div class="resume__line line line--thin"></div>
             </div>
-            
+
             <h3 class="resume__title">Образование</h3>
-            
+
             <div class="resume__item">
               <div class="resume__info">
                 <div class="resume__circle">
-                    <div class="resume__circle-line line line--thin"></div>
+                  <div class="resume__circle-line line line--thin"></div>
                   <div class="circle"></div>
                   <img
                     class="resume__img"
                     src="./assets/svg/University.svg"
                     alt="University"
                   />
-                  
                 </div>
                 <div class="resume__info-container">
-                    <h5>МГТУ им. Н.Э.Баумана</h5>
-                    <div class="font12">Диплом магистра | Москва (2014-2020)</div>
-                  </div>
+                  <h5>МГТУ им. Н.Э.Баумана</h5>
+                  <div class="font12">Диплом магистра | Москва (2014-2020)</div>
+                </div>
               </div>
 
               <div class="resume__text">
@@ -101,19 +149,18 @@
             <div class="resume__item">
               <div class="resume__info">
                 <div class="resume__circle">
-                    <div class="resume__circle-line line line--thin"></div>
+                  <div class="resume__circle-line line line--thin"></div>
                   <div class="circle"></div>
                   <img
                     class="resume__img"
                     src="./assets/svg/Courses.svg"
                     alt="Courses"
                   />
-                  
                 </div>
                 <div class="resume__info-container">
-                    <h5>Udemy</h5>
-                    <div class="font12">Курсы по Web-разработке</div>
-                  </div>
+                  <h5>Udemy</h5>
+                  <div class="font12">Курсы по Web-разработке</div>
+                </div>
               </div>
 
               <div class="resume__text">
@@ -126,28 +173,27 @@
           </div>
           <div class="resume">
             <div class="resume__decoration">
-                <div class="circle circle--small"></div>
-                <div class="resume__line line line--thin"></div>
+              <div class="circle circle--small"></div>
+              <div class="resume__line line line--thin"></div>
             </div>
-            
+
             <h3 class="resume__title">Опыт работы</h3>
-            
+
             <div class="resume__item">
               <div class="resume__info">
                 <div class="resume__circle">
-                    <div class="resume__circle-line line line--thin"></div>
+                  <div class="resume__circle-line line line--thin"></div>
                   <div class="circle"></div>
                   <img
                     class="resume__img"
                     src="./assets/svg/Developer.svg"
                     alt="Developer"
                   />
-                  
                 </div>
                 <div class="resume__info-container">
-                    <h5>Front-End Developer</h5>
-                    <div class="font12">Epam | Москва (2018-2019)</div>
-                  </div>
+                  <h5>Front-End Developer</h5>
+                  <div class="font12">Epam | Москва (2018-2019)</div>
+                </div>
               </div>
 
               <div class="resume__text">
@@ -160,19 +206,18 @@
             <div class="resume__item">
               <div class="resume__info">
                 <div class="resume__circle">
-                    <div class="resume__circle-line line line--thin"></div>
+                  <div class="resume__circle-line line line--thin"></div>
                   <div class="circle"></div>
                   <img
                     class="resume__img"
                     src="./assets/svg/designer.svg"
                     alt="Designer"
                   />
-                  
                 </div>
                 <div class="resume__info-container">
-                    <h5>UI/UX Designer</h5>
-                    <div class="font12">Squad Team | Москва (2018)</div>
-                  </div>
+                  <h5>UI/UX Designer</h5>
+                  <div class="font12">Squad Team | Москва (2018)</div>
+                </div>
               </div>
 
               <div class="resume__text">
@@ -186,5 +231,84 @@
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img src="assets/img/Photo.jpg" alt="Photo" class="footer__photo" />
+        <div class="footer_content">
+          <div class="left-circle">
+            <div class="circle"></div>
+            <h4 class="left-circle__text">Контакты</h4>
+          </div>
+          <h1 class="title-text">Свяжитесь со мной</h1>
+          <div class="footer__line line line--yellow"></div>
+          <h4 class="footer__content-text">Любым удобным для вас способом</h4>
+          <div class="footer__contacts-container">
+            <a
+              href="https://www.facebook.com/"
+              class="footer__contacts-item facebook-img facebook-img--rotate"
+            ></a>
+            <a
+              href="https://web.telegram.org/"
+              class="footer__contacts-item telegram-img"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="footer__contacts-item inst-img"
+            >
+            </a>
+          </div>
+          <h4 class="footer__content-text">
+            Или оставьте ваши данные и я сама вам напишу:
+          </h4>
+          <form class="footer__form-container" id="contact-form">
+            <div class="footer__form-data">
+              <div class="footer__form-item">
+                <label for="name" class="form__label">Ваше имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form__input"
+                  maxlength="40"
+                />
+                <div class="form__error" id="errorName"></div>
+              </div>
+              <div class="footer__form-item">
+                <label for="email" class="form__label">Ваша почта</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  maxlength="40"
+                />
+                <div class="form__error" id="errorEmail"></div>
+              </div>
+            </div>
+            <div class="footer__form-item footer__form-item--message">
+              <label for="message" class="form__label">Вашe сообщение</label>
+              <textarea
+                type="text"
+                id="message"
+                name="message"
+                class="form__textarea"
+              ></textarea>
+              <div class="form__error" id="errorMessage"></div>
+            </div>
+
+            <button
+              type="submit"
+              class="footer__form-button button button--yellow"
+            >
+              Отправить сообщение
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/form.js"></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
