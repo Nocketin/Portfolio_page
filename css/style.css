@@ -103,25 +103,25 @@ body {
 }
 
 .github-img {
-  background-image: url("./assets/svg/Github.svg");
+  background-image: url("../assets/svg/Github.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .inst-img {
-  background-image: url("./assets/svg/Instagram.svg");
+  background-image: url("../assets/svg/Instagram.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .facebook-img {
-  background-image: url("./assets/svg/Facebook.svg");
+  background-image: url("../assets/svg/Facebook.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .telegram-img {
-  background-image: url("./assets/svg/Telegram.svg");
+  background-image: url("../assets/svg/Telegram.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }

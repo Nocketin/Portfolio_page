@@ -61,7 +61,7 @@ form.addEventListener("submit", async (e) => {
         }
       );
       const data = await response.json();
-      console.log("Ответ:", data);
+      console.log("Ответ сервера:", data);
       alert("Сообщение отправлено!");
       form.reset();
     } catch (err) {
